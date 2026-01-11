@@ -213,7 +213,9 @@ html, body{
   background:#f7f2ff;
   padding:60px 20px;
   text-align:center;
-  height:99vh;
+   height:auto;
+     min-height:99vh;     
+
 }
 
 .section-title{
@@ -227,7 +229,7 @@ html, body{
 .product_wrapped{
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
   gap:20px;
   flex-wrap:wrap;
 }
@@ -242,7 +244,7 @@ html, body{
   display:flex;
   flex-direction:column;
   gap:15px;
-  margin-left:90px;
+  margin-left:0px;
   padding-bottom:90px;
   box-shadow:0 14px 28px rgba(0,0,0,0.15);
   transition:0.3s ease;
@@ -675,7 +677,8 @@ height: 500px;
 .product-page{
   background:#f7f2ff;
   text-align:center;
-  height:200vh;
+  min-width: 100vh;
+    padding-bottom:120px; 
 }
 
 .product-page .section-title{
@@ -696,7 +699,7 @@ padding-top: 60px;
 .shop-section{
   max-width:1200px;
   margin:40px auto;
-  padding:0 20px;
+  padding:0 20px 80px;
 }
 
 .shop-title{
@@ -707,12 +710,12 @@ padding-top: 60px;
 .shop-wrapper{
   display:flex;
   flex-wrap:wrap;
-  gap:60px;
+  gap:32px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
     align-items: flex-start;
       align-items: flex-start;
-      margin-left: 50px;
+      margin-left:0px;
 
 
  }
