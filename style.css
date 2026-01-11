@@ -14,7 +14,7 @@ html, body{
 /* ================= NAVBAR ================= */
  .navbar{
   background:#2b0f45;
-  height:110px;
+  height:100px;
   width:100%;
   display:flex;
   align-items:center;
@@ -25,7 +25,7 @@ html, body{
 
 
  .logo img{
-  height:100px;
+  height:90px;
   width:auto;
   display:block;
   margin-left:70px;
@@ -71,7 +71,7 @@ html, body{
  .signin{
   text-decoration:none;
   color:#f0e6ff;
-  font-size:25px;
+  font-size:20px;
   padding:8px 14px;
   border:1px solid #f0e6ff;
   border-radius:6px;
@@ -87,7 +87,7 @@ html, body{
   text-decoration:none;
   background:#b06bff;
   color:#fff;
-  font-size:25px;
+  font-size:20px;
   padding:8px 16px;
   border-radius:6px;
   margin-left:15px;
@@ -677,8 +677,10 @@ height: 500px;
 .product-page{
   background:#f7f2ff;
   text-align:center;
-  min-width: 100vh;
+  min-width: 100%;
     padding-bottom:120px; 
+      overflow-x: hidden;
+
 }
 
 .product-page .section-title{
@@ -1520,7 +1522,38 @@ button:hover{
   }
 
 
+  .shop-section{
+    padding:0 14px;    
+    margin:24px auto;
+  }
 
+  .product-page .section-title{
+    font-size:32px;
+    padding-top:40px;
+  }
+
+  .product-page .section-sub{
+    font-size:16px;
+    padding:0 10px;
+  }
+
+  .shop-wrapper{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+        margin-left: 0;  
+  }
+
+  .shop-item{
+        width: 90%;
+    max-width: 330px;
+  }
+
+
+
+
+
+  
   /* Footer */
   .footer{
      padding:50px 16px 16px;
@@ -1581,7 +1614,10 @@ button:hover{
     padding-bottom:40px;
    }
   .product-page .section-title{ 
-    font-size:36px;
+    font-size:30px;
+    line-height:1.2;
+    padding-top:40px;
+    text-align:center;
    }
   .product-page .section-sub{ 
     font-size:18px;
@@ -1700,10 +1736,19 @@ button:hover{
   .product-card img{
      height:220px;
      }
+
+
   .shop-item img{
-     width:230px;
-      height:270px;
-     }
+    width:100%;
+    max-width:420px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
+  }
+
+
+
 
   .footer-col h3{ 
     font-size:30px;
@@ -1712,8 +1757,8 @@ button:hover{
     font-size:24px;
    }
 }
-@media (min-width: 800px){
 
+@media (min-width: 800px){
   .about{
     padding:100px 20px;        
   }
@@ -1753,4 +1798,6 @@ button:hover{
     width:100%;
     margin-top:0;              
   }
+
 }
+  
